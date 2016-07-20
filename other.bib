@@ -10,9 +10,12 @@
 @string{tit    = ieee # "Transactions on Information Theory"}
 
 % conferences
-@string{pods    = acm # " SIGMOD Symposium on Principles of Database Systems (PODS)"}
-@string{sigmod  = acm # " SIGMOD Conference on Management of Data (SIGMOD)"}
-@string{sigcomm = acm # " SIGCOMM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)"}
+@string{pods    = acm # "SIGMOD Symposium on Principles of Database Systems (PODS)"}
+@string{lics    = "Symposium on Logic in Computer Science (LICS)"}
+
+@string{sigmod  = acm # "SIGMOD Conference on Management of Data (SIGMOD)"}
+@string{sigcomm = acm # "SIGCOMM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)"}
+
 @string{uai     = "Conference on Uncertainty in Artificial Intelligence (UAI)"}
 @string{imc     = "Internet Measurement Conference (IMC)"}
 @string{fusion  = "International Conerence on Information Fusion (FUSION)"}
@@ -43,6 +46,19 @@
 }
 
 %%%%%% JOURNALS
+
+%%% annals of mathematical statistics
+@article{kullback51information,
+  author = "Kullback, S. and Leibler, R. A.",
+  journal = "The Annals of Mathematical Statistics",
+  month = "03",
+  number = "1",
+  pages = "79--86",
+  publisher = "The Institute of Mathematical Statistics",
+  title = "On Information and Sufficiency",
+  volume = "22",
+  year = "1951"
+}
 
 %%% Information and Computation
 @article{chatzikokolakis08information,
@@ -109,6 +125,29 @@
 } 
 
 %%%%%% CONFERENCES
+
+%%% LICS
+@inproceedings{desharnais02metric,
+  author    = {Josee Desharnais and Radha Jagadeesan and Vineet Gupta
+                  and Prakash Panangaden},
+  title     = {The Metric Analogue of Weak Bisimulation for
+                  Probabilistic Processes},
+  booktitle = inproc # lics,
+  year      = {2002},
+  pages     = {413-422},
+}
+
+%%% Berkeley Symposium on Mathematical Statistics and Probability
+@inproceedings{renyi61measures,
+  author    = "R\'{e}nyi, Alfr\'{e}d",
+  booktitle = "Proceedings of the Fourth Berkeley Symposium on
+                  Mathematical Statistics and Probability, Volume 1:
+                  Contributions to the Theory of Statistics",
+  pages     = "547--561",
+  publisher = "University of California Press",
+  title     = "On Measures of Entropy and Information",
+  year      = "1961"
+}
 
 %%% ISITA
 @inproceedings{massey90causality,
@@ -207,7 +246,8 @@
 
 %%% IJCAI
 @INPROCEEDINGS{milch05blog,
-  author = {Brian Milch and Bhaskara Marthi and Stuart Russell and David Sontag and Daniel L. Ong and Andrey Kolobov},
+  author = {Brian Milch and Bhaskara Marthi and Stuart Russell and
+                  David Sontag and Daniel L. Ong and Andrey Kolobov},
   title = {Blog: Probabilistic models with unknown objects},
   booktitle = inproc # ijcai,
   year = {2005},
@@ -215,31 +255,33 @@
 
 %%% SIGMOD
 @inproceedings{mcsherry09privacy,
-author = {McSherry, Frank D.},
-title = {Privacy Integrated Queries},
-booktitle = inproc # sigmod,
-year = {2009}
+  author    = {McSherry, Frank D.},
+  title     = {Privacy Integrated Queries},
+  booktitle = inproc # sigmod,
+  year      = {2009}
 }
 
 %%% WMCCS
 @inproceedings{seong10decentralized,
-  title = {{PrPl}: a Decentralized Social Networking Infrastructure},
-  author = {Seok-Won Seong and Jiwon Seo and Matthew Nasielski and
+  title     = {{PrPl}: a Decentralized Social Networking
+                  Infrastructure},
+  author    = {Seok-Won Seong and Jiwon Seo and Matthew Nasielski and
                   Debangsu Sengupta and Sudheendra Hangal and Seng
-                  Keat Teh and Ruven Chu and Ben Dodson and Monica
-                  S. Lam},
+                  Keat Teh and Ruven Chu and Ben Dodson and Monica S.
+                  Lam},
   booktitle = inproc # wmccs,
-  note = {Invited Paper},
-  year = 2010,
+  note      = {Invited Paper},
+  year      = 2010,
 }
 
 %%% SIGCOMM
 @inproceedings{persona,
- author = {Baden, Randy and Bender, Adam and Spring, Neil and
+ author    = {Baden, Randy and Bender, Adam and Spring, Neil and
                   Bhattacharjee, Bobby and Starin, Daniel},
- title = {Persona: an online social network with user-defined privacy},
+ title     = {Persona: an online social network with user-defined
+                  privacy},
  booktitle = inproc # sigcomm,
- year = {2009},
+ year      = {2009},
 }
 
 %%%%%% WORKSHOPS
@@ -248,20 +290,22 @@ year = {2009}
 
 %%% CoRR
 @article{yasuoka11bounding,
-  author    = {Hirotoshi Yasuoka and
-               Tachio Terauchi},
-  title     = {On Bounding Problems of Quantitative Information Flow},
-  journal   = corr,
-  volume    = {abs/1112.4237},
-  year      = {2011},
+  author  = {Hirotoshi Yasuoka and
+             Tachio Terauchi},
+  title   = {On Bounding Problems of Quantitative Information Flow},
+  journal = corr,
+  volume  = {abs/1112.4237},
+  year    = {2011},
 }
 
 @article{malacaria11algebraic,
-  author = {Pasquale Malacaria},
-  title = {Algebraic Foundations for Information Theoretical, Probabilistic and Guessability Measures of Information Flow},
+  author  = {Pasquale Malacaria},
+  title   = {Algebraic Foundations for Information Theoretical,
+                  Probabilistic and Guessability Measures of
+                  Information Flow},
   journal = corr,
-  volume = {abs/1101.3453},
-  year = 2011
+  volume  = {abs/1101.3453},
+  year    = 2011
 }
 
 %%% Communications of the ACM (CACM)
