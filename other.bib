@@ -10,20 +10,30 @@
 @string{tit    = ieee # "Transactions on Information Theory"}
 
 % conferences
-@string{pods    = acm # "SIGMOD Symposium on Principles of Database Systems (PODS)"}
+@string{asian   = "Asian Computing Science Conference (ASIAN)"}
+
+%%% theory
 @string{lics    = "Symposium on Logic in Computer Science (LICS)"}
+@string{focs    = ieee # "Symposium on Foundations of Computer Science (FOCS)"}
+@string{fossacs = "Conference on Foundations of Software Science and Computation Structures (FoSSaCS)"}
 
+%%% databases
+@string{pods    = acm # "SIGMOD Symposium on Principles of Database Systems (PODS)"}
 @string{sigmod  = acm # "SIGMOD Conference on Management of Data (SIGMOD)"}
-@string{sigcomm = acm # "SIGCOMM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)"}
+@string{vldb    = "International Conference on Very Large Data Bases (VLDB)"}
 
-@string{uai     = "Conference on Uncertainty in Artificial Intelligence (UAI)"}
+%%% networking
+@string{sigcomm = acm # "SIGCOMM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)"}
+@string{nsdi    = "Symposium on Networked Systems Design and Implementation (NSDI)"}
 @string{imc     = "Internet Measurement Conference (IMC)"}
 @string{fusion  = "International Conerence on Information Fusion (FUSION)"}
-@string{asian   = "Asian Computing Science Conference (ASIAN)"}
+
+%%% AI/ML
+@string{kdd  = acm # "SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)"}
+@string{uai     = "Conference on Uncertainty in Artificial Intelligence (UAI)"}
 @string{ijcai   = "International Joint Conference on Artificial Intelligence (IJCAI)"}
-@string{nsdi    = "Symposium on Networked Systems Design and Implementation (NSDI)"}
-@string{vldb    = "International Conference on Very Large Data Bases (VLDB)"}
-@string{focs    = ieee # "Symposium on Foundations of Computer Science (FOCS)"}
+
+%%% information theory
 @string{isit    = ieee # "International Symposium on Information Theory (ISIT)"}
 @string{isita   = "International Symposium on Information Theory and its Applications (ISITA)"}
 
@@ -34,7 +44,7 @@
 @string{corr = "Computing Research Repository (CoRR)"}
 @string{cacm = "Communications of the " # acm}
 
-%%%%%% BOOKS
+% BOOKS
 
 @InCollection{pfeffer07ibal,
   author =       {Avi Pfeffer},
@@ -46,7 +56,32 @@
   publisher =    {MIT Press}
 }
 
-%%%%%% JOURNALS
+% JOURNALS
+
+%%% IJSTTT
+
+@article{bagnara06powerset,
+  author =       {Bagnara, Roberto and Hill, Patricia M. and
+                  Zaffanella, Enea},
+  title =        {Widening operators for powerset domains},
+  journal =      ijsttt,
+  volume =       8,
+  number =       4,
+  year =         2006,
+  pages =        {449--466},
+}
+
+%%% JCSS
+
+@article{kozen81semantics,
+  volume =       22,
+  number =       3,
+  title =        "Semantics of probabilistic programs",
+  author =       "Dexter Kozen",
+  year =         1981,
+  pages =        "328--350",
+  journal =      jcss
+}
 
 %%% annals of mathematical statistics
 
@@ -139,7 +174,18 @@
   pages =        {181--199},
 } 
 
-%%%%%% CONFERENCES
+% CONFERENCES
+
+%%% KDD
+
+@inproceedings{feldman15disparate,
+  author =       {Feldman, Michael and Friedler, Sorelle A. and
+                  Moeller, John and Scheidegger, Carlos and
+                  Venkatasubramanian, Suresh},
+  title =        {Certifying and Removing Disparate Impact},
+  booktitle =    inproc # kdd,
+  year =         2015,
+} 
 
 %%% LICS
 
@@ -197,6 +243,15 @@
   title =        {Balancing value and risk in information sharing
                   through obfuscation},
   year =         2012,
+}
+
+%%% FOSSACS
+
+@inproceedings{smith09foundations,
+  author =       {Smith, Geoffrey},
+  title =        {On the Foundations of Quantitative Information Flow},
+  booktitle =    inproc # fossacs,
+  year =         2009,
 }
 
 %%% FOCS
@@ -322,20 +377,11 @@
   year =         2009,
 }
 
-%%%%%% WORKSHOPS
+% WORKSHOPS
 
-%%%%%% OTHERS
+% OTHERS
 
 %%% CoRR
-
-@article{yasuoka11bounding,
-  author =       {Hirotoshi Yasuoka and Tachio Terauchi},
-  title =        {On Bounding Problems of Quantitative Information
-                  Flow},
-  journal =      corr,
-  volume =       {abs/1112.4237},
-  year =         2011,
-}
 
 @article{malacaria11algebraic,
   author =       {Pasquale Malacaria},

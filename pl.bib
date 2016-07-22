@@ -15,13 +15,14 @@
 @string{mfps    = "Conference on Mathematical Foundations of Programming Semantics (MFPS)"}
 @string{concur  = "International Conference on Concurrency Theory"}
 @string{icse    = "International Conference on Software Engineering (ICSE)"}
+@string{icalp   = "International Colloquium on Automata, Languages and Programming (ICALP)"}
 
 % workshops
 @string{plas = acm # " SIGPLAN Workshop on Programming Languages and Analysis for Security (PLAS)"}
 
 % others
 
-%%%%%% JOURNALS
+% JOURNALS
 
 %%% TOPLAS
 
@@ -37,32 +38,7 @@
   pages =        {4:1--4:46},
 } 
 
-%%% JCSS
-
-@article{kozen81semantics,
-  volume =       22,
-  number =       3,
-  title =        "Semantics of probabilistic programs",
-  author =       "Dexter Kozen",
-  year =         1981,
-  pages =        "328--350",
-  journal =      jcss
-}
-
-%%% IJSTTT
-
-@article{bagnara06powerset,
-  author =       {Bagnara, Roberto and Hill, Patricia M. and
-                  Zaffanella, Enea},
-  title =        {Widening operators for powerset domains},
-  journal =      ijsttt,
-  volume =       8,
-  number =       4,
-  year =         2006,
-  pages =        {449--466},
-}
-
-%%%%%% CONFERENCES
+% CONFERENCES
 
 %%% Mathematical Foundations of Programming Semantics (MFPS)
 
@@ -202,26 +178,6 @@
   year =         2000
 }
 
-%%% SAP
-
-@inproceedings{backes09automatic,
-  author =       {Michael Backes and Boris K{\"o}pf and Andrey
-                  Rybalchenko},
-  title =        {Automatic Discovery and Quantification of
-                  Information Leaks},
-  booktitle =    inproc # sap,
-  year =         2009,
-}
-
-@inproceedings{shokri11quantifying,
-  author =       {Reza Shokri and George Theodorakopoulos and
-                  Jean-Yves Le Boudec and Jean-Pierre Hubaux},
-  title =        {Quantifying Location Privacy},
-  booktitle =    inproc # sap,
-  year =         2011,
-  pages =        {247--262},
-}
-
 %%% ESOP
 
 @inproceedings{borgstrom11measure,
@@ -242,6 +198,18 @@
   year =         2012,
 }
 
+%%% ICALP
+
+@inproceedings{mciver10compositional,
+  author =       {Annabelle McIver and Larissa Meinicke and Carroll
+                  Morgan},
+  title =        {Compositional Closure for {Bayes} Risk in
+                  Probabilistic Noninterference},
+  booktitle =    {Proc.\ ICALP'10},
+  booktitle =    inproc # icalp,
+  year =         2014,
+} 
+
 %%% ICSE
 
 @inproceedings{gordon14probabilistic,
@@ -252,13 +220,13 @@
   year =         2014
 }
 
-%%%%%% WORKSHOPS
+% WORKSHOPS
 
 %%% PLAS
 
 @inproceedings{malacaria08lagrange,
   Author =       {Pasquale Malacaria and Han Chen},
-  Booktitle =    inproce # plas,
+  Booktitle =    inproc # plas,
   Pages =        {135-146},
   Title =        {Lagrange multipliers and maximum information leakage
                   in different observational models},
@@ -282,7 +250,7 @@
   booktitle =    inproc # plas,
 }
 
-%%%%%% OTHER
+% OTHER
 
 %%% technical reports
 
