@@ -8,6 +8,7 @@
 @string{ijsttt = "International Journal on Software Tools for Technology Transfer"}
 @string{entcs  = "Electronic Notes in Theoretical Computer Science"}
 @string{tit    = ieee # "Transactions on Information Theory"}
+@string{dmkd   = "Data Mining and Knowledge Discovery"}
 
 % conferences
 @string{asian   = "Asian Computing Science Conference (ASIAN)"}
@@ -32,6 +33,7 @@
 @string{kdd  = acm # "SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)"}
 @string{uai     = "Conference on Uncertainty in Artificial Intelligence (UAI)"}
 @string{ijcai   = "International Joint Conference on Artificial Intelligence (IJCAI)"}
+@string{icml    = "Internetional Conference on Machine Learning"}
 
 %%% information theory
 @string{isit    = ieee # "International Symposium on Information Theory (ISIT)"}
@@ -39,6 +41,7 @@
 
 % workshops
 @string{wmccs = "Workshop on Mobile Cloud Computing \& Services: Social Networks and Beyond"}
+@string{padm = "Workshop on Privacy Aspects of Data Mining"}
 
 % other
 @string{corr = "Computing Research Repository (CoRR)"}
@@ -173,6 +176,19 @@
   year =         2005,
   pages =        {181--199},
 } 
+
+%%% DMKD
+
+@Article{calders10naive,
+  author =       "Calders, Toon and Verwer, Sicco",
+  title =        "Three naive Bayes approaches for discrimination-free
+                  classification",
+  journal =      dmkd,
+  year =         2010,
+  volume =       21,
+  number =       2,
+  pages =        "277--292",
+}
 
 % CONFERENCES
 
@@ -343,6 +359,16 @@
   year =         2005,
 }
 
+%%% ICML
+
+@inproceedings{zemel13fair,
+  Title =        {Learning Fair Representations},
+  Booktitle =    inproc # icml,
+  Author =       {Rich Zemel and Yu Wu and Kevin Swersky and Toni
+                  Pitassi and Cynthia Dwork},
+  Year =         2013,
+}
+
 %%% SIGMOD
 
 @inproceedings{mcsherry09privacy,
@@ -379,9 +405,20 @@
 
 % WORKSHOPS
 
+%%% PADM
+
+@INPROCEEDINGS{kamishima11fairness,
+  author =       {Toshihiro Kamishima and Shotaro Akaho and Jun
+                  Sakuma},
+  title =        {Fairness-aware learning through regularization
+                  approach},
+  booktitle =    inproc # PADM,
+  year =         2011,
+}
+
 % OTHERS
 
-%%% CoRR
+%%% CoRR / arXiv
 
 @article{malacaria11algebraic,
   author =       {Pasquale Malacaria},
@@ -391,6 +428,14 @@
   journal =      corr,
   volume =       {abs/1101.3453},
   year =         2011
+}
+
+@article{dwork11fairness,
+  author =       {Cynthia Dwork and Moritz Hardt and Toniann Pitassi
+                  and Omer Reingold and Richard S. Zemel},
+  title =        {Fairness Through Awareness},
+  journal =      corr,
+  year =         2011,
 }
 
 %%% Communications of the ACM (CACM)
