@@ -1,29 +1,187 @@
-%%%%%% JOURNALS
-%%% JCS
+@string{inproc    = "Proceedings of the "}
+@string{invited   = "Invited paper, "}
+@string{submitted = "(Submitted)"}
+@string{toappear  = "(To appear)"}
 
-@article{mardziel13belieflong,
-  title =        {Dynamic Enforcement of Knowledge-based Security
-                  Policies using Abstract Interpretation},
-  author =       {Mardziel, Piotr and Magill, Stephen and Hicks,
-                  Michael and Srivatsa, Mudhakar},
-  journal =      jcs,
-  year =         2013,
-  volume =       21,
-  number =       4,
-  pages =        {463-532},
-  month =        jan,
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel13dynamiclong.paper.pdf},
+@string{acm  = "ACM "}
+@string{ieee = "IEEE "}
+
+@string{break = "<p/>"}
+
+%%% AUTHRS
+@author{piotr-mardziel,
+ name = {Piotr Mardziel},
+ link = {http://piotr.mardziel.com},
+ icon = {http://piotr.mardziel.com/images/wolf_gap1_mug.jpg},
+ institution = {CMU},
 }
 
-%%%%%% CONFERENCES
-%%% CSF
+@author{aseem-rastogi,
+ name = {Aseem Rastogi},
+ link = {http://www.cs.umd.edu/~aseem},
+ icon = {http://www.cs.umd.edu/~aseem/pic.jpg},
+ institution = {MSR},
+}
+
+@author{matthew-hammer,
+ name = {Matthew Hammer},
+ link = {http://matthewhammer.org},
+ icon = {http://matthewhammer.org/MatthewHammer.jpg},
+ institution = {UColorado},
+}
+
+@author{michael-hicks,
+ name = {Michael Hicks},
+ link = {http://www.cs.umd.edu/~mwh},
+ icon = {http://www.cs.umd.edu/~mwh/mike2011.jpg},
+ institution = {UMD},
+}
+
+@author{stephen-magill,
+ name = {Stephen Magill},
+ link = {http://www.cs.cmu.edu/~smagill},
+ icon = {http://www.cs.cmu.edu/~smagill/common/portrait.gif},
+ institution = {Galois},
+}
+
+@author{mudhakar-srivatsa,
+ name = {Mudhakar Srivatsa},
+ link = {http://researcher.watson.ibm.com/researcher/view.php?person=us-msrivats},
+ icon = {http://researcher.watson.ibm.com/researcher/photos/779.jpg},
+ institution = {IBM Research},
+}
+
+@author{jonathan-katz,
+ name = {Jonathan Katz},
+ link = {http://www.cs.umd.edu/~jkatz},
+ icon = {http://www.cs.umd.edu/projects/photohistory/facultypictures_full/katz.jpg},
+ institution = {UMD},
+}
+
+@author{adam-bender,
+ name = {Adam Bender},
+ institution = {Google},
+}
+
+@author{deve-levin,
+ name = {Dave Levin},
+ link = {http://www.cs.umd.edu/~dml},
+ icon = {http://www.cs.umd.edu/~dml/dml_canossa.jpg},
+ institution = {UMD},
+}
+
+@author{mario-alvim,
+ name = {Mario Alvim},
+ link = {https://sites.google.com/site/msalvimjr/},
+ icon = {https://sites.google.com/site/msalvimjr/_/rsrc/1380582081949/home/ms.jpg},
+ institution = {UFMG},
+}
+
+@author{michael-clarkson,
+ name = {Michael R. Clarkson},
+ link = {http://www.cs.cornell.edu/~clarkson/},
+ icon = {http://www.cs.cornell.edu/~clarkson/img/mrc_slope300.jpg},
+ institution = {Cornell},
+}
+
+@author{arman-khouzani,
+ name = {MHR Khouzani},
+ link = {http://www.eecs.qmul.ac.uk/~khouzani/},
+ icon = {http://www.eecs.qmul.ac.uk/~khouzani/Images/khouzani_2013.jpg},
+ institution = {Queen Mary},
+}
+
+@author{carlos-cid,
+ name = {Carlos Cid},
+ institution = {Royal Holloway},
+}
+
+@author{andrew-ruef,
+ name = {Andrew Ruef},
+ link = {http://www.cs.umd.edu/~awruef/},
+ icon = {http://gravatar.com/avatar/b1fb9fc883e69d6b5829e2095c31ec9d?s=200},
+ institution = {UMD},
+}
+
+@author{james-parker,
+ name = {James Parker},
+ institution = {UMD},
+}
+
+@author{atif-memon,
+ name = {Atif Memon},
+ institution = {UMD},
+}
+
+@author{jandelyn-plane,
+ name = {Jandelyn Plane},
+ institution = {UMD}
+}
+
+@author{michelle-mazurek,
+ name = {Michelle Mazurek},
+ link = {https://www.umiacs.umd.edu/~mmazurek},
+ icon = {https://umiacs.umd.edu/~mmazurek/misc/mazurek-9394.jpg},
+ institution = {UMD},
+}
+
+%%% JOURNALS
+%%%%%% JCS
+@string{jcs  = "Journal of Computer Security"}
+
+@ARTICLE{mardziel13belieflong,
+  TITLE = {Dynamic Enforcement of Knowledge-based Security Policies using Probabilistic Abstract Interpretation},
+  AUTHOR = {Piotr Mardziel and Stephen Magill and Michael Hicks and Mudhakar Srivatsa},
+  YEAR = 2013,
+  MONTH = JAN,
+  JOURNAL = jcs,
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/beliefpol-extended.pdf},
+  _keywords = {information security, quantified information flow},
+  _abstract = {This paper explores the idea of knowledge-based
+                  security policies, which are used to decide whether
+                  to answer queries over secret data based on an
+                  estimation of the querier's (possibly increased)
+                  knowledge given the results. Limiting knowledge is
+                  the goal of existing information release policies
+                  that employ mechanisms such as noising,
+                  anonymization, and redaction. Knowledge-based
+                  policies are more general: they increase flexibility
+                  by not fixing the means to restrict information
+                  flow. We enforce a knowledge-based policy by
+                  explicitly tracking a model of a querier's belief
+                  about secret data, represented as a probability
+                  distribution, and denying any query that could
+                  increase knowledge above a given threshold. We
+                  implement query analysis and belief tracking via
+                  abstract interpretation, which allows us to trade
+                  off precision and performance through the use of
+                  abstraction. We have developed an approach to
+                  augment standard abstract domains to include
+                  probabilities, and thus define distributions. We
+                  focus on developing probabilistic polyhedra in
+                  particular, to support numeric programs. While
+                  probabilistic abstract interpretation has been
+                  considered before, our domain is the first whose
+                  design supports sound conditioning, which is
+                  required to ensure that estimates of a querier's
+                  knowledge are accurate. Experiments with our
+                  implementation show that several useful queries can
+                  be handled efficiently, particularly compared to
+                  exact (i.e., sound) inference involving sampling. We
+                  also show that, for our benchmarks, restricting
+                  constraints to octagons or intervals, rather than
+                  full polyhedra, can dramatically improve performance
+                  while incurring little to no loss in precision.}
+}
+
+%%% CONFERENCES
+%%%%%% CSF
+@string{csf       = ieee # "Computer Security Foundations Symposium (CSF)"}
 
 @inproceedings{khouzani15picking,
   title =        {Picking vs. Guessing Secrets: A Game-Theoretic
                   Analysis},
-  author =       {Khouzani, MHR and Mardziel, Piotr and Cid, Carlos
-                  and Srivatsa, Mudhakar},
+  author =       {MHR Khouzani and Piotr Mardziel and Carlos Cid and Mudhakar Srivatsa},
   booktitle =    inproc # csf,
   year =         2015,
   month =        jul,
@@ -32,76 +190,205 @@
 }
 %   url       = {http://www.cs.umd.edu/~mwh/papers/beliefpol.pdf},
 
-@inproceedings{mardziel11belief,
-  title =        {Dynamic Enforcement of Knowledge-based Security
-                  Policies},
-  author =       {Mardziel, Piotr and Magill, Stephen and Hicks,
-                  Michael and Srivatsa, Mudhakar},
-  booktitle =    inproc # csf,
-  year =         2011,
-  month =        jun,
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel11dynamic.paper.pdf},
+@INPROCEEDINGS{mardziel11belief,
+  TITLE = {Dynamic Enforcement of Knowledge-based Security Policies},
+  AUTHOR = {Piotr Mardziel and Stephen Magill and Michael Hicks and Mudhakar Srivatsa},
+  BOOKTITLE = inproc # csf,
+  YEAR = 2011,
+  MONTH = JUN,
+  PAGES = {114--128},
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/beliefpol.pdf},
+  _keywords = {information security, quantified information flow},
+  _abstract = {This paper explores the idea of knowledge-based
+                  security policies, which are used to decide whether
+                  to answer queries over secret data based on an
+                  estimation of the querier's (possibly increased)
+                  knowledge given the results. Limiting knowledge is
+                  the goal of existing information release policies
+                  that employ mechanisms such as noising,
+                  anonymization, and redaction. Knowledge-based
+                  policies are more general: they increase flexibility
+                  by not fixing the means to restrict information
+                  flow. We enforce a knowledge-based policy by
+                  explicitly tracking a model of a querier's belief
+                  about secret data, represented as a probability
+                  distribution, and denying any query that could
+                  increase knowledge above a given threshold. We
+                  implement query analysis and belief tracking via
+                  abstract interpretation using a novel probabilistic
+                  polyhedral domain, whose design permits trading off
+                  precision with performance while ensuring estimates
+                  of a querier's knowledge are sound. Experiments with
+                  our implementation show that several useful queries
+                  can be handled efficiently, and performance scales
+                  far better than would more standard implementations
+                  of probabilistic computation based on sampling.}
 }
-%%% S&P OAKLAND
 
-@inproceedings{mardziel14time,
-  title =        {Quantifying Information Flow for Dynamic Secrets},
-  author =       {Mardziel, Piotr and Alvim, Mario and Hicks, Michael
-                  and Clarkson, Michael},
-  booktitle =    inproc # sap,
-  year =         2014,
-  month =        may,
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel14time.paper.pdf},
+%%%%%% S&P OAKLAND
+@string{sap       = ieee # "Symposium on Security and Privacy (S\&P)"}
+
+@INPROCEEDINGS{mardziel14time,
+  AUTHOR = {Piotr Mardziel and Mario Alvim and Michael Hicks and Michael R. Clarkson},
+  TITLE = {Quantifying Information Flow for Time-Varying Data},
+  BOOKTITLE = inproc # sap,
+  MONTH = MAY,
+  YEAR = 2014,
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/qif-dynamic-secrets.pdf},
+  _keywords = {information security, quantified information flow},
+  _abstract = {A metric is proposed for quantifying leakage of
+                  information about secrets and about how secrets
+                  change over time. The metric is used with a model of
+                  information flow for probabilistic, interactive
+                  systems with adaptive adversaries. The model and
+                  metric are implemented in a probabilistic
+                  programming language and used to analyze several
+                  examples. The analysis demonstrates that adaptivity
+                  increases information flow. }
 }
 
-%%%%%% WORKSHOPS
-%%% FCS
+%%%%%% CCS
+@string{ccs       = acm  # "Conference on Computer and Communications Security (CCS)"}
+
+@INPROCEEDINGS{ruef2016bibifi,
+  AUTHOR = {Andrew Ruef and Michael Hicks and James Parker and Dave Levin and Michelle Mazurek and Piotr Mardziel},
+  TITLE = {Build It, Break It, Fix It: Contesting Secure Development},
+  BOOKTITLE = inproc # ccs,
+  YEAR = {2016},
+  MONTH = OCT,
+  _link_doc = {http://arxiv.org/abs/1606.01881},
+  _keywords = {secure coding contest},
+  _abstract = {Typical security contests focus on breaking or
+                  mitigating the impact of buggy systems. We present
+                  the Build-it, Break-it, Fix-it (BIBIFI) contest,
+                  which aims to assess the ability to securely build
+                  software, not just break it. In BIBIFI, teams build
+                  specified software with the goal of maximizing
+                  correctness, performance, and security. The latter
+                  is tested when teams attempt to break other teams'
+                  submissions. Winners are chosen from among the best
+                  builders and the best breakers. BIBIFI was designed
+                  to be open-ended-teams can use any language, tool,
+                  process, etc. that they like. As such, contest
+                  outcomes shed light on factors that correlate with
+                  successfully building secure software and breaking
+                  insecure software. During 2015, we ran three
+                  contests involving a total of 116 teams and two
+                  different programming problems. Quantitative
+                  analysis from these contests found that the most
+                  efficient build-it submissions used C/C++, but
+                  submissions coded in other statically-typed
+                  languages were less likely to have a security flaw;
+                  build-it teams with diverse programming-language
+                  knowledge also produced more secure code. Shorter
+                  programs correlated with better scores. Break-it
+                  teams that were also successful build-it teams were
+                  significantly better at finding security bugs.},
+                  
+}
+
+%%% WORKSHOPS
+%%%%%% FCS
+@string{fcs   = "Workshop on Foundations of Computer Security (FCS)"}
 
 @INPROCEEDINGS{alvim16strategy,
-  AUTHOR =       {M{\'a}rio S. Alvim and Piotr Mardziel and Michael
-                  Hicks},
+  AUTHOR =       {Mario Alvim and Piotr Mardziel and Michael Hicks},
   TITLE =        {Towards the Quantification of Strategy Leakage},
   BOOKTITLE =    fcs,
   MONTH =        jul,
   YEAR =         2016,
 }
 
-@INPROCEEDINGS{mardziel14loss,
-  AUTHOR =       {Piotr Mardziel and M{\'a}rio S. Alvim and Michael
-                  Hicks},
-  TITLE =        {Adversary Gain vs Defender Loss in Quantified
-                  Information Flow},
-  BOOKTITLE =    fcs,
-  MONTH =        jul,
-  YEAR =         2014,
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel14loss.paper.pdf},
-}
-%%% PLAS
-
-@inproceedings{mardziel12smc,
-  title =        {Knowledge-Oriented Secure Multiparty Computation},
-  author =       {Mardziel, Piotr and Michael Hicks and Jonathan Katz
-                  and Mudhakar Srivatsa},
-  booktitle =    inproc # plas,
-  year =         2012,
-  month =        jun,
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel12smc.paper.pdf},
+@inproceedings{mardziel14loss,
+  AUTHOR = {Piotr Mardziel and Mario Alvim and Michael Hicks},
+  TITLE = {Adversary Gain vs. Defender Loss in Quantified Information Flow},
+  BOOKTITLE = inproc # fcs,
+  MONTH = JUL,
+  YEAR = 2014,
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/qifgl.pdf},
+  _keywords = {information security, quantified information flow},
+  _abstract = { Metrics for quantifying information leakage assume
+                  that an adversary's gain is the defender's loss. We
+                  demonstrate that this assumption does not always
+                  hold via a class of scenarios. We describe how to
+                  extend quantification to account for a defender with
+                  goals distinct from adversary failure. We implement
+                  the extension and experimentally explore the impact
+                  on the measured information leakage of the
+                  motivating scenario. },
 }
 
+%%%%%% PLAS
+@string{plas = acm # " SIGPLAN Workshop on Programming Languages and Analysis for Security (PLAS)"}
+
+@INPROCEEDINGS{mardziel12smc,
+  TITLE = {Knowledge-Oriented Secure Multiparty Computation},
+  AUTHOR = {Piotr Mardziel and Michael Hicks and Jonathan Katz and Mudhakar Srivatsa},
+  BOOKTITLE = inproc # plas,
+  MONTH = JUN,
+  YEAR = 2012,
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/belief-smc.pdf},
+  _keywords = {information security, secure multi-party computation, quantified information flow},
+  _abstract = {Protocols for secure multiparty computation (SMC) allow
+                  a set of mutually distrusting parties to compute a
+                  function f of their private inputs while revealing
+                  nothing about their inputs beyond what is implied by
+                  the result. Depending on f, however, the result
+                  itself may reveal more information than parties are
+                  comfortable with. Almost all previous work on SMC
+                  treats f as given. Left unanswered is the question
+                  of how parties should decide whether it is ``safe''
+                  for them to compute f in the first place. } # break
+                  # {We propose here a way to apply belief tracking to
+                  SMC in order to address exactly this question. In
+                  our approach, each participating party is able to
+                  reason about the increase in knowledge that other
+                  parties could gain as a result of computing f, and
+                  may choose not to participate (or participate only
+                  partially) so as to restrict that gain in knowledge.
+                  We develop two techniques-the belief set method and
+                  the SMC belief tracking method-prove them sound, and
+                  discuss their precision/performance tradeoffs using
+                  a series of experiments. }
+}
 @inproceedings{rastogi13knowledge,
-  title =        {Knowledge Inference for Optimizing Secure
-                  Multi-party Computation},
-  author =       {Aseem Rastogi and Mardziel, Piotr and Matthew Hammer
-                  and Michael Hicks},
-  booktitle =    inproc # plas,
-  year =         2013,
-  month =        jun,
-  url =
-                  {http://piotr.mardziel.com/docs/rastogi13knowledge.paper.pdf},
+  AUTHOR = {Aseem Rastogi and Piotr Mardziel and Matthew Hammer and Michael Hicks},
+  TITLE = {Knowledge Inference for Optimizing Secure Multi-party Computation},
+  MONTH = JUN,
+  YEAR = 2013,
+  BOOKTITLE = plas,
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/smc-knowledge.pdf},
+  _keywords = {information security, secure multi-party computation},
+  _abstract = {In secure multi-party computation, mutually distrusting
+                  parties cooperatively compute functions of their
+                  private data; in the process, they only learn
+                  certain results as per the protocol (e.g., the final
+                  output). The realization of these protocols uses
+                  cryptographic techniques to avoid leaking
+                  information between the parties. A protocol for a
+                  secure computation can sometimes be optimized
+                  without changing its security guarantee: when the
+                  parties can use their private data and the revealed
+                  output to infer the values of other data, then this
+                  other data need not be concealed from them via
+                  cryptography. } # break # {In the context of
+                  automatically optimizing secure multi-party
+                  computation, we define two related problems,
+                  knowledge inference and constructive knowledge
+                  inference. In both problems, we attempt to
+                  automatically discover when and if intermediate
+                  variables used in a protocol will (eventually) be
+                  known to the parties involved in the computation.
+                  Provably-known variables offer optimization
+                  opportunities.} # break # {We formally state the
+                  problem of knowledge inference (and its constructive
+                  variant); we describe our solutions, which are built
+                  atop existing, standard technology such as SMT
+                  solvers. We show that our approach is sound, and
+                  further, we characterize the completeness properties
+                  enjoyed by our approach. We have implemented our
+                  approach, and present a preliminary experimental
+                  evaluation. }
 }
 
 @inproceedings{ruef15bibifi,
@@ -112,43 +399,69 @@
                   Piotr Mardziel},
   booktitle =    {Proceedings of the USENIX Workshop on Cyber Security
                   Instrumentation and Test (CSET)},
-  month =        aug,
+  month =        AUG,
   year =         2015,
-  url =          {http://www.cs.umd.edu/~mwh/papers/bibifi-cset15.pdf}
+  _link_doc =    {http://www.cs.umd.edu/~mwh/papers/bibifi-cset15.pdf},
+  _keywords =    {secure coding contest},
 }
 
-%%%%%% OTHER
-%%% technical reports
+%%% OTHER
+%%%%%% technical reports
 
 @techreport{mardziel14timeTR,
-  author =       {Mardziel, Piotr and Alvim, Mario and Hicks, Michael
-                  and Clarkson, Michael R.},
-  title =        {Quantifying Information Flow for Dynamic Secrets},
-  booktitle =    {Proceedings of the IEEE Symposium on Security and
-                  Privacy (S&P)},
-  month =        {May},
-  year =         2014,
-  number =       {CS-TR-5035},
-  institution =  {University of Maryland Department of Computer
-                  Science},
-  note =         {Extended version with proofs and memory limited
-                  adversary},
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel14timeTR.paper.pdf},
+  AUTHOR = {Piotr Mardziel and Mario Alvim and Michael Hicks and Michael R. Clarkson},
+  TITLE = {Quantifying Information Flow for Time-Varying Data},
+  BOOKTITLE = inproc # sap,
+  MONTH = MAY,
+  YEAR = 2014,
+  NUMBER = {CS-TR-xxx},
+  INSTITUTION = {University of Maryland Department of Computer Science},
+  NOTE = {Extended version with proofs and memory limited adversary},
+  _keywords = {information security, quantified information flow},
+  _abstract = {A metric is proposed for quantifying leakage of
+                  information about secrets and about how secrets
+                  change over time. The metric is used with a model of
+                  information flow for probabilistic, interactive
+                  systems with adaptive adversaries. The model and
+                  metric are implemented in a probabilistic
+                  programming language and used to analyze several
+                  examples. The analysis demonstrates that adaptivity
+                  increases information flow. }
 }
 
-@techreport{mardziel11beliefTR,
-  title =        {Dynamic Enforcement of Knowledge-based Security
-                  Policies},
-  author =       {Mardziel, Piotr and Magill, Stephen and Hicks,
-                  Michael and Srivatsa, Mudhakar},
-  number =       {CS-TR-4978},
-  institution =  {University of Maryland Department of Computer
-                  Science},
-  year =         2011,
-  month =        jul,
-  note =         {Extended version with proofs and additional
-                  benchmarks},
-  url =
-                  {http://piotr.mardziel.com/docs/mardziel11dynamicTR.paper.pdf},
+@TECHREPORT{mardziel11beliefTR,
+  TITLE = {Dynamic Enforcement of Knowledge-based Security Policies},
+  AUTHOR = {Piotr Mardziel and Stephen Magill and Michael Hicks and Mudhakar Srivatsa},
+  NUMBER = {CS-TR-4978},
+  INSTITUTION = {University of Maryland Department of Computer Science},
+  YEAR = 2011,
+  MONTH = JUL,
+  NOTE = {Extended version with proofs and additional benchmarks},
+  _link_doc = {http://www.cs.umd.edu/~mwh/papers/beliefpolTR.pdf},
+  _keywords = {information security, quantified information flow},
+  _abstract = {This paper explores the idea of knowledge-based
+                  security policies, which are used to decide whether
+                  to answer queries over secret data based on an
+                  estimation of the querier's (possibly increased)
+                  knowledge given the results. Limiting knowledge is
+                  the goal of existing information release policies
+                  that employ mechanisms such as noising,
+                  anonymization, and redaction. Knowledge-based
+                  policies are more general: they increase flexibility
+                  by not fixing the means to restrict information
+                  flow. We enforce a knowledge-based policy by
+                  explicitly tracking a model of a querier's belief
+                  about secret data, represented as a probability
+                  distribution, and denying any query that could
+                  increase knowledge above a given threshold. We
+                  implement query analysis and belief tracking via
+                  abstract interpretation using a novel probabilistic
+                  polyhedral domain, whose design permits trading off
+                  precision with performance while ensuring estimates
+                  of a querier's knowledge are sound. Experiments with
+                  our implementation show that several useful queries
+                  can be handled efficiently, and performance scales
+                  far better than would more standard implementations
+                  of probabilistic computation based on sampling.}
 }
+
